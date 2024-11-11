@@ -63,7 +63,6 @@ func (m model) checkDeployments() tea.Cmd {
 
 func convertToSliceAndSort(deploymentMap map[string]*appsv1.Deployment) []string {
 	keys := make([]string, len(deploymentMap))
-	// fmt.Println("Length of deployment map: ", len(deploymentMap))
 
 	i := 0
 	for k := range deploymentMap {
